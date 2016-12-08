@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0new_logo" translatesAutoresizingMaskIntoConstraints="NO" id="13t-PB-MdK">
+                                <rect key="frame" x="25" y="20" width="335" height="335"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-Da-qkL">
+                                <rect key="frame" x="155" y="392" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="startNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cY-kt-Cjz"/>
+                                    <segue destination="U0N-lm-GvO" kind="show" id="5JA-kR-c3Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pyI-L9-AUg">
+            <objects>
+                <viewController id="U0N-lm-GvO" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fz4-hV-daw"/>
+                        <viewControllerLayoutGuide type="bottom" id="kbk-pF-o1t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qGj-YD-VT8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn4-Ej-mZz">
+                                <rect key="frame" x="97" y="574" width="60" height="85"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="cardSelection:" destination="U0N-lm-GvO" eventType="touchUpInside" id="iOx-BY-6Df"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX1-99-yhJ">
+                                <rect key="frame" x="186" y="574" width="59" height="85"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="cardSelection:" destination="U0N-lm-GvO" eventType="touchUpInside" id="Sag-Yz-CVL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oD-Gu-WPp">
+                                <rect key="frame" x="275" y="574" width="60" height="85"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="cardSelection:" destination="U0N-lm-GvO" eventType="touchUpInside" id="MyY-yK-g1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKl-6J-UCl">
+                                <rect key="frame" x="268" y="449" width="87" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Next Round"/>
+                                <connections>
+                                    <action selector="nextRoundButton:" destination="U0N-lm-GvO" eventType="touchUpInside" id="xaa-ZV-SAy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvY-QI-dRv">
+                                <rect key="frame" x="5" y="28" width="62" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Card:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuZ-Nc-WR9">
+                                <rect key="frame" x="65" y="271" width="134" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ai Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-ow-2en">
+                                <rect key="frame" x="85" y="174" width="59" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="player Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-IA-Vab">
+                                <rect key="frame" x="152" y="271" width="128" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Discard Pile:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwu-IY-cth">
+                                <rect key="frame" x="5" y="497" width="157" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSW-cj-NSJ">
+                                <rect key="frame" x="49" y="438" width="47" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ai Discard Pile:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5P-Yo-XOR">
+                                <rect key="frame" x="5" y="57" width="157" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="inPlay count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-7G-H2V">
+                                <rect key="frame" x="46" y="219" width="98" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AH7-iC-dA0">
+                                <rect key="frame" x="151" y="219" width="71" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ai WAR Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPU-yj-RQ9">
+                                <rect key="frame" x="44" y="198" width="100" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player WAR Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-8R-AI7">
+                                <rect key="frame" x="10" y="242" width="134" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-vq-Kq9">
+                                <rect key="frame" x="152" y="198" width="71" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="##" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTJ-aa-rhi">
+                                <rect key="frame" x="152" y="242" width="71" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ai Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxz-0t-8VF">
+                                <rect key="frame" x="152" y="174" width="128" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uob-VI-0t1">
+                                <rect key="frame" x="305" y="228" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" title="PU 2 - NE"/>
+                                <connections>
+                                    <action selector="powerUp2NegateElementsButton:" destination="U0N-lm-GvO" eventType="touchUpInside" id="iuC-sE-6B4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-De-Hyh">
+                                <rect key="frame" x="305" y="285" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" title="PU 3 - WM"/>
+                                <connections>
+                                    <action selector="powerUp3WarMachineButton:" destination="U0N-lm-GvO" eventType="touchUpInside" id="cv5-Be-dzn"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-cD-Xqc">
+                                <rect key="frame" x="108" y="94" width="49" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHo-Ip-xki">
+                                <rect key="frame" x="190" y="94" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZM-t5-cn0">
+                                <rect key="frame" x="279" y="94" width="52" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-4C-TfW">
+                                <rect key="frame" x="305" y="342" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" title="PU 4 - RN"/>
+                                <connections>
+                                    <action selector="powerUp4ReconButton:" destination="U0N-lm-GvO" eventType="touchUpInside" id="vRu-oW-ugW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPO-7W-ETA">
+                                <rect key="frame" x="305" y="174" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" title="PU 1 - SP"/>
+                                <connections>
+                                    <action selector="powerUp1SmallPackageButton:" destination="U0N-lm-GvO" eventType="touchUpInside" id="zmn-bn-h5M"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="bme-F5-pZG">
+                                <rect key="frame" x="10" y="574" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-H6-ygW">
+                                <rect key="frame" x="97" y="574" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-gC-q8M">
+                                <rect key="frame" x="186" y="574" width="59" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="Imd-cj-LDf">
+                                <rect key="frame" x="275" y="574" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="TqD-97-dQO">
+                                <rect key="frame" x="36" y="457" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="wOl-Up-A0k">
+                                <rect key="frame" x="156" y="342" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-nQ-Ogi">
+                                <rect key="frame" x="64" y="149" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="2KS-5c-S9m">
+                                <rect key="frame" x="10" y="57" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="XLR-1y-J0I">
+                                <rect key="frame" x="279" y="57" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="WyI-YZ-Zz9">
+                                <rect key="frame" x="186" y="57" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="fHT-AB-0LK">
+                                <rect key="frame" x="97" y="57" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0emptycard" translatesAutoresizingMaskIntoConstraints="NO" id="wBE-Ln-APq">
+                                <rect key="frame" x="156" y="239" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PU_R_inactive" translatesAutoresizingMaskIntoConstraints="NO" id="TEf-OV-V3O">
+                                <rect key="frame" x="305" y="342" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PU_SP_inactive" translatesAutoresizingMaskIntoConstraints="NO" id="wE6-Hf-qOU">
+                                <rect key="frame" x="305" y="174" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PU_NE_inactive" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-dN-j3v">
+                                <rect key="frame" x="305" y="228" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PU_WM_inactive" translatesAutoresizingMaskIntoConstraints="NO" id="kKX-KE-jrA">
+                                <rect key="frame" x="305" y="285" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75J-Gk-eiy">
+                                <rect key="frame" x="8" y="550" width="56" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-rw-6Nf">
+                                <rect key="frame" x="8" y="384" width="140" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.28251652739999999" green="0.40528119829999998" blue="0.97120418850000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs7-Dw-lhQ">
+                                <rect key="frame" x="10" y="263" width="134" height="52"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.87710778118794008" green="0.10000000000000001" blue="0.56226059415307927" alpha="0.69503546099290781" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAa-Kc-Xu9">
+                                <rect key="frame" x="10" y="323" width="134" height="53"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r61-G5-FBO">
+                                <rect key="frame" x="88" y="150" width="287" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.52859547920000005" blue="0.88214886979999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-eP-Ndm">
+                                <rect key="frame" x="78" y="11" width="220" height="220"/>
+                                <animations/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDv-ra-X3Z">
+                                <rect key="frame" x="99" y="438" width="152" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.32087562530000002" green="0.92931937170000001" blue="0.22047261309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNewGame:" destination="U0N-lm-GvO" eventType="touchUpInside" id="Qmu-kL-ZGi"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-ul-emh">
+                                <rect key="frame" x="231" y="348" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="T1j-l1-Dec">
+                                <rect key="frame" x="231" y="210" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-pc-cX2">
+                                <rect key="frame" x="231" y="228" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0back_of_card" translatesAutoresizingMaskIntoConstraints="NO" id="QGZ-BZ-7r3">
+                                <rect key="frame" x="231" y="331" width="60" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eal-kO-CmC">
+                                <rect key="frame" x="28" y="169" width="76" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.32087562530000002" green="0.92931937170000001" blue="0.22047261309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="aiBonusLabel" destination="Cs7-Dw-lhQ" id="60U-fC-sZE"/>
+                        <outlet property="aiCard1Image" destination="fHT-AB-0LK" id="WfV-SZ-z9y"/>
+                        <outlet property="aiCard2Image" destination="WyI-YZ-Zz9" id="EEj-db-nuF"/>
+                        <outlet property="aiCard3Image" destination="XLR-1y-J0I" id="AKc-hq-G0h"/>
+                        <outlet property="aiCardInPlayImage" destination="wBE-Ln-APq" id="Ifv-Lf-UDT"/>
+                        <outlet property="aiCardLabel1" destination="BTL-cD-Xqc" id="Hc5-Pd-OTc"/>
+                        <outlet property="aiCardLabel2" destination="zHo-Ip-xki" id="bod-dT-STZ"/>
+                        <outlet property="aiCardLabel3" destination="iZM-t5-cn0" id="E1i-IO-noO"/>
+                        <outlet property="aiCardTestLabel" destination="Oxz-0t-8VF" id="iCt-rs-caS"/>
+                        <outlet property="aiCardWarLabel" destination="Go7-vq-Kq9" id="kBP-HP-rPY"/>
+                        <outlet property="aiDeckCountLabel" destination="GvY-QI-dRv" id="wlb-zn-CFk"/>
+                        <outlet property="aiDeckImage" destination="2KS-5c-S9m" id="ZdE-Cx-Y0d"/>
+                        <outlet property="aiDiscardPileImage" destination="iC6-nQ-Ogi" id="Gu9-Xq-bSX"/>
+                        <outlet property="aiDiscardPileLabel" destination="Eal-kO-CmC" id="t5y-dD-RY1"/>
+                        <outlet property="gameReset" destination="WDv-ra-X3Z" id="Pya-Wv-Wbz"/>
+                        <outlet property="handWinnerLabel" destination="jAa-Kc-Xu9" id="O1U-pN-piH"/>
+                        <outlet property="inPlayCounterLabel" destination="AH7-iC-dA0" id="BKb-1o-FGh"/>
+                        <outlet property="nextButton" destination="RKl-6J-UCl" id="0u9-bd-BXT"/>
+                        <outlet property="overallWinnerLabel" destination="zIc-eP-Ndm" id="Ff5-dB-MBp"/>
+                        <outlet property="playerBonusLabel" destination="V7w-rw-6Nf" id="Ueq-ej-Kjy"/>
+                        <outlet property="playerCard1" destination="Dn4-Ej-mZz" id="pwO-KV-G5Q"/>
+                        <outlet property="playerCard1Image" destination="YCK-H6-ygW" id="iDg-GF-dLX"/>
+                        <outlet property="playerCard2" destination="GX1-99-yhJ" id="wTU-B7-0Ij"/>
+                        <outlet property="playerCard2Image" destination="YzO-gC-q8M" id="NvJ-wx-8ky"/>
+                        <outlet property="playerCard3" destination="9oD-Gu-WPp" id="LhO-uR-WDM"/>
+                        <outlet property="playerCard3Image" destination="Imd-cj-LDf" id="Cs2-so-5DL"/>
+                        <outlet property="playerCardInPlayImage" destination="wOl-Up-A0k" id="1Hp-5u-Kir"/>
+                        <outlet property="playerCardTestLabel" destination="H5c-IA-Vab" id="OLN-vv-0bh"/>
+                        <outlet property="playerCardWarLabel" destination="zTJ-aa-rhi" id="JMs-qz-z08"/>
+                        <outlet property="playerDeckCountLabel" destination="75J-Gk-eiy" id="6Nq-Wy-g5L"/>
+                        <outlet property="playerDeckImage" destination="bme-F5-pZG" id="0s2-VC-awt"/>
+                        <outlet property="playerDiscardPileImage" destination="TqD-97-dQO" id="LMp-jC-AQa"/>
+                        <outlet property="playerDiscardPileLabel" destination="GSW-cj-NSJ" id="zb3-Vm-EbZ"/>
+                        <outlet property="powerUp1Image" destination="wE6-Hf-qOU" id="bvr-d7-fvI"/>
+                        <outlet property="powerUp1SmallPackageButtonOutlet" destination="UPO-7W-ETA" id="G3A-8d-83C"/>
+                        <outlet property="powerUp2Image" destination="TTg-dN-j3v" id="bGw-nN-dPY"/>
+                        <outlet property="powerUp2NegateElementsOutlet" destination="uob-VI-0t1" id="Zcn-Dh-tDH"/>
+                        <outlet property="powerUp3Image" destination="kKX-KE-jrA" id="xaF-wy-Z2u"/>
+                        <outlet property="powerUp3WarMachineOutlet" destination="Skm-De-Hyh" id="fMv-Vh-Vzm"/>
+                        <outlet property="powerUp4Image" destination="TEf-OV-V3O" id="ULP-l0-aRv"/>
+                        <outlet property="powerUp4ReconOutlet" destination="eoe-4C-TfW" id="a6V-4k-p3A"/>
+                        <outlet property="warAiBottomCard" destination="T1j-l1-Dec" id="1IZ-d3-3M1"/>
+                        <outlet property="warAiTopCard" destination="jl3-pc-cX2" id="VsI-in-kik"/>
+                        <outlet property="warBottomCard" destination="YJQ-ul-emh" id="6Wk-42-QVd"/>
+                        <outlet property="warLabel" destination="r61-G5-FBO" id="M9o-H8-6IV"/>
+                        <outlet property="warTopCard" destination="QGZ-BZ-7r3" id="CO2-i3-Ox2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3N-Xm-rFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251.5" y="283.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0back_of_card" width="855" height="1280"/>
+        <image name="0emptycard" width="858" height="1284"/>
+        <image name="0new_logo" width="854" height="854"/>
+        <image name="PU_NE_inactive" width="796" height="796"/>
+        <image name="PU_R_inactive" width="796" height="796"/>
+        <image name="PU_SP_inactive" width="796" height="796"/>
+        <image name="PU_WM_inactive" width="796" height="796"/>
+    </resources>
+</document>
